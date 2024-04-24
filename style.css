@@ -1,0 +1,49 @@
+body {
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 21%, rgba(255,255,255,1) 49%, rgba(255,0,0,1) 79%);
+}   
+
+.game-button {
+    position: absolute;
+    left: 200px;
+    top: 100px;
+    background-color: rgb(0, 0, 0);
+    padding: 50px 100px;
+    border: 10px solid rgb(255, 0, 0);
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    font-size: 90px;
+    cursor: pointer;
+}
+.opt-button {
+    position: absolute;
+    left: 200px;
+    top: 700px;
+    background-color: rgb(0, 0, 0);
+    padding: 50px 100px;
+    border: 10px solid rgb(255, 0, 0);
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    font-size: 90px;
+    cursor: pointer;
+}
+.git-button {
+    position: absolute;
+    left: 200px;
+    top: 400px;
+    background-color: rgb(0, 0, 0);
+    padding: 50px 100px;
+    border: 10px solid rgb(255, 0, 0);
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    font-size: 90px;
+    cursor: pointer;
+}
+a {
+    color: #000; 
+    text-decoration: none;
+    transition: opacity 0.3s;
+}
+a:hover {
+    opacity: 0.7;
+}
