@@ -1,3 +1,4 @@
+
 //Перевірка підключеного файлу скриптів
 console.log('Перевірка підключеного файлу скриптів market.js');
 // Отримання елементу з ідентифікатором items 
@@ -5,7 +6,7 @@ let itemsDiv = document.getElementById("items");
 
 //Перевірка існування знайденого блоку
 if (itemsDiv) {
-    //Вивід знайденого елементу 
+   
     console.log(itemsDiv)
     for (let i = 0; i < 100; i++) {
         itemsDiv.innerHTML += '<div class = "item"></div>'
