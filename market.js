@@ -1,25 +1,23 @@
+let itemsArray = [
+    'Газонокосарка 43',
+    'Електричний тример 110',
+    'Електрична газонокосарка 32',
+    'Акумуляторний оприскувач 12 N',
+];
 
-//Перевірка підключеного файлу скриптів
-console.log('Перевірка підключеного файлу скриптів market.js');
-// Отримання елементу з ідентифікатором items 
 let itemsDiv = document.getElementById("items");
 
-//Перевірка існування знайденого блоку
 if (itemsDiv) {
-   
-    console.log(itemsDiv)
-    for (let i = 0; i < 100; i++) {
-        itemsDiv.innerHTML += '<div class = "item"></div>'
-    }
+    itemsArray.forEach((item, index) => {
+        let itemNumber = (index + 1).toString().padStart(2, ''); 
+        itemsDiv.innerHTML +=
+        `
+        <div class="item">
+            <h2>товар №${itemNumber} з 4</h2>
+            <p>${item}</p>
+        </div>
+        `;
+    });
 } else {
-    console.log('не знайдено')
-}
-
-//viznachennya masivu
-let itemsArray = ['', '', '', '']
-//vivedennya masivu v consol
-console.log(itemsArray)
-//vivedennya elementiv masivu v consol
-for (let i = 0; i < itemsArray.length; i++) {
-    console.log(itemsArray[i])
+    console.log('Блок товарів не знайдено');
 }
